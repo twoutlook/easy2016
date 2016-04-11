@@ -1,1 +1,6 @@
 mark.txt
+
+on local developing environment to modify
+git push -u origin master
+on remote production server
+git pull
