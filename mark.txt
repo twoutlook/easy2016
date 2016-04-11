@@ -3,4 +3,4 @@ mark.txt
 on local developing environment to modify
 git push -u origin master
 on remote production server
-git pull
+git pull <<< this can be done using port 10000 webmin
