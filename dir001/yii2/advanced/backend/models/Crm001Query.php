@@ -3,11 +3,11 @@
 namespace app\models;
 
 /**
- * This is the ActiveQuery class for [[Dir]].
+ * This is the ActiveQuery class for [[Crm001]].
  *
- * @see Dir
+ * @see Crm001
  */
-class DirQuery extends \yii\db\ActiveQuery
+class Crm001Query extends \yii\db\ActiveQuery
 {
     /*public function active()
     {
@@ -16,7 +16,7 @@ class DirQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return Dir[]|array
+     * @return Crm001[]|array
      */
     public function all($db = null)
     {
@@ -25,7 +25,7 @@ class DirQuery extends \yii\db\ActiveQuery
 
     /**
      * @inheritdoc
-     * @return Dir|array|null
+     * @return Crm001|array|null
      */
     public function one($db = null)
     {

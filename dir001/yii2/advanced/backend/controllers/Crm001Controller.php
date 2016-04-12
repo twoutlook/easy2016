@@ -1,18 +1,18 @@
 <?php
 
-//namespace app\controllers;
-namespace backend\controllers; // 2016-4-8, always keep alert!
+namespace app\controllers;
+
 use Yii;
-use app\models\Dir;
-use app\models\DirSearch;
+use app\models\Crm001;
+use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * DirController implements the CRUD actions for Dir model.
+ * Crm001Controller implements the CRUD actions for Crm001 model.
  */
-class DirController extends Controller
+class Crm001Controller extends Controller
 {
     /**
      * @inheritdoc
@@ -30,23 +30,23 @@ class DirController extends Controller
     }
 
     /**
-     * Lists all Dir models.
+     * Lists all Crm001 models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new DirSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $dataProvider = new ActiveDataProvider([
+            'query' => Crm001::find(),
+        ]);
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
     }
 
     /**
-     * Displays a single Dir model.
-     * @param integer $id
+     * Displays a single Crm001 model.
+     * @param string $id
      * @return mixed
      */
     public function actionView($id)
@@ -57,16 +57,16 @@ class DirController extends Controller
     }
 
     /**
-     * Creates a new Dir model.
+     * Creates a new Crm001 model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Dir();
+        $model = new Crm001();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->code]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -75,9 +75,9 @@ class DirController extends Controller
     }
 
     /**
-     * Updates an existing Dir model.
+     * Updates an existing Crm001 model.
      * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
+     * @param string $id
      * @return mixed
      */
     public function actionUpdate($id)
@@ -85,7 +85,7 @@ class DirController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->code]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -94,9 +94,9 @@ class DirController extends Controller
     }
 
     /**
-     * Deletes an existing Dir model.
+     * Deletes an existing Crm001 model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
+     * @param string $id
      * @return mixed
      */
     public function actionDelete($id)
@@ -107,15 +107,15 @@ class DirController extends Controller
     }
 
     /**
-     * Finds the Dir model based on its primary key value.
+     * Finds the Crm001 model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param integer $id
-     * @return Dir the loaded model
+     * @param string $id
+     * @return Crm001 the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Dir::findOne($id)) !== null) {
+        if (($model = Crm001::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

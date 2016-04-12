@@ -4,13 +4,13 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Dir */
+/* @var $model app\models\Crm001 */
 
-$this->title = 'Create Dir';
-$this->params['breadcrumbs'][] = ['label' => 'Dirs', 'url' => ['index']];
+$this->title = 'Create Crm001';
+$this->params['breadcrumbs'][] = ['label' => 'Crm001s', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="dir-create">
+<div class="crm001-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
