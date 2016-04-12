@@ -31,7 +31,7 @@ class Crm001 extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['code', 'category', 'item', 'item2'], 'required'],
+            [['code', 'category', 'item'], 'required'],
             [['code'], 'string', 'max' => 8],
             [['category'], 'string', 'max' => 64],
             [['item', 'item2', 'cust01', 'cust02', 'cust03'], 'string', 'max' => 1024],
