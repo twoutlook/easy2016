@@ -1,7 +1,7 @@
 <?php
 
-namespace app\controllers;
-
+//namespace app\controllers;
+namespace backend\controllers; // 2016-4-13, always keep alert! NECESSARY FIX AFTER GII
 use Yii;
 use app\models\Crm001;
 use yii\data\ActiveDataProvider;
