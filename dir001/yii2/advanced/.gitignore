@@ -15,8 +15,8 @@ nbproject
 # windows thumbnail cache
 Thumbs.db
 
-# composer vendor dir
-/vendor
+# composer vendor dir    QUESTION HOW TO COMPOSER VENDOR DIR AT SERVER?
+#/vendor
 
 # composer itself is not needed
 composer.phar
