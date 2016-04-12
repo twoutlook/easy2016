@@ -15,7 +15,7 @@ $userId = Yii::$app->user->getId();
 //$userId=Yii::$app->user->getId();
 //echo "user id is $userId"
 if (!($userId == 3 || $userId == 4)) { // 3: dir, 4: diradmin
-    echo "<h2>You must login to continue!  </h2>";
+    echo "<h2>您必需以 dir 或是 diradmin 登入!  </h2>";
     return;
 }
 ?>
