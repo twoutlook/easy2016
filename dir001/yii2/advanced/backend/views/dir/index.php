@@ -24,7 +24,7 @@ if (!($userId == 3 || $userId == 4)){
 <div class="dir-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php  echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
    
 <?php Pjax::begin(); ?>    <?= GridView::widget([
