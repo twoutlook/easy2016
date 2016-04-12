@@ -14,7 +14,7 @@ $userId=Yii::$app->user->getId();
 //$userId=Yii::$app->user->getId();
 
 //echo "user id is $userId"
-if ($userId <> 3 || $userId <> 4){
+if (!($userId == 3 || $userId == 4)){
 	
 	echo "<h2>You must login to continue!  </h2>";
 	return;
