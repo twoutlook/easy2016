@@ -11,10 +11,12 @@ $this->title = 'Dirs';
 $this->params['breadcrumbs'][] = $this->title;
 
 $userId=Yii::$app->user->getId();
+//$userId=Yii::$app->user->getId();
+
 //echo "user id is $userId"
-if ($userId <> 3){
+if ($userId <> 3 || $userId <> 4){
 	
-	echo "<h2>You must login to continue!</h2>";
+	echo "<h2>You must login to continue!  </h2>";
 	return;
 }
 
@@ -22,7 +24,7 @@ if ($userId <> 3){
 <div class="dir-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+    <?php  echo $this->render('_search', ['model' => $searchModel]); ?>
 
    
 <?php Pjax::begin(); ?>    <?= GridView::widget([
