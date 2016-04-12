@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <p class="lead">您已登入富鈦金屬企業內部網站</p>
 
         <p><a class="btn btn-lg btn-success" href="index.php?r=dir%2Findex">打開通信錄</a></p>
-        <p><a class="btn btn-lg btn-success" href="index.php?r=dir%2Fcreate">新增人員到通信錄</a></p>
+      
     </div>
 
     <div class="body-content">

@@ -30,6 +30,7 @@ if (!($userId == 3 || $userId == 4)) { // 3: dir, 4: diradmin
     <?php
     if ($userId == 4) {
 
+        echo '<p><a class="btn btn-lg btn-success" href="index.php?r=dir%2Fcreate">新增人員到通信錄</a></p> ';
         echo GridView::widget([
             'dataProvider' => $dataProvider,
             'filterModel' => $searchModel,
