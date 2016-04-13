@@ -54,6 +54,13 @@ class Author extends \yii\db\ActiveRecord
         return $this->hasMany(Book::className(), ['author_id' => 'id']);
     }
 
+        public function getDisplayName()
+    {
+        return $this->firstname.' '. $this->lastname;
+    }
+
+    
+    
     /**
      * @inheritdoc
      * @return AuthorQuery the active query used by this AR class.
