@@ -14,9 +14,16 @@ use app\models\Dir102;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'dept_id')->textInput() ?>
-
-    <?= $form->field($model, 'prj_id')->textInput() ?>
+    <?php
+	//echo $form->field($model, 'dept_id')->textInput() ;
+ 	echo $form->field($model, 'dept_id')->dropDownList(\yii\helpers\ArrayHelper::map(Dir101::find()->select(['id', 'dept_name'])->all(), 'id', 'dept_name'), ['class' => 'form-control inline-block']);
+	?>
+  
+    <?php
+	//$form->field($model, 'prj_id')->textInput();
+  	echo $form->field($model, 'prj_id')->dropDownList(\yii\helpers\ArrayHelper::map(Dir102::find()->select(['id', 'prj_name'])->all(), 'id', 'prj_name'), ['class' => 'form-control inline-block']);
+	
+  	?>
 
     <?= $form->field($model, 'job_title')->textInput(['maxlength' => true]) ?>
 

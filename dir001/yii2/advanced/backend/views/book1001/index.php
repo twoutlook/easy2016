@@ -3,18 +3,20 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 
+//use app\models\Book1002;
+
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Dir100s';
+$this->title = 'Book1001s';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="dir100-index">
+<div class="book1001-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Dir100', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Book1001', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -22,16 +24,10 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-  //          'dept_id',
-//            'dir101.dept_name',
-          'dept.dept_name',
-    //        'prj_id',
-            'prj.prj_name',
-            'job_title',
-            'empe_name',
-             'ext_num',
-             'cell_num',
-             'mailbox',
+            'title',
+            'author_id',
+           'author.firstname',//&#23621;&#28982;&#26159;&#36889;&#27171;,&#20173;&#28982;&#21483;author
+          
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
