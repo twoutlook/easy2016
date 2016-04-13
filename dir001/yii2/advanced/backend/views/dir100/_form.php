@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use app\models\Dir101;
+use app\models\Dir102;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Dir100 */
