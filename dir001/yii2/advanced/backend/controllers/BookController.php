@@ -5,6 +5,9 @@ namespace backend\controllers; // 2016-4-13, always keep alert! NECESSARY FIX AF
 
 use Yii;
 use app\models\Book;
+use app\models\Author; //2016/4/13 8:49  Class 'Author' not found
+
+
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
