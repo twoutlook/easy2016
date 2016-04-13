@@ -23,7 +23,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 //            'id',
             'dept_id',
-            'dir-dept.deptName',
+       
+            'dir_dept.deptName',
 //            'dirDept.deptName', FAILED
 //            'dir_dept.deptName', //FAILED
             
