@@ -25,6 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'title',
             'author_id',
             'author.firstname', //TRY 3
+            'author.displayName', //TRY 4
             
 //            'displayName', //TRY AGAIN
 
