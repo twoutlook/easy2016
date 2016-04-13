@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Create Dir100', ['create'], ['class' => 'btn btn-success']) ?>
-                   <a class="btn btn-lg btn-success" href="../index.php?r=dir101%2Findex">maintain Dept</a>
+                   <a class="btn btn-lg btn-success" href="../web/index.php?r=dir101%2Findex">maintain Dept</a>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
