@@ -76,4 +76,13 @@ class Dir100 extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Dir101::className(), ['id' => 'dept_id']);
     }
+
+    /**
+     * @inheritdoc
+     * @return Dir100Query the active query used by this AR class.
+     */
+    public static function find()
+    {
+        return new Dir100Query(get_called_class());
+    }
 }
