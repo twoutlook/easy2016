@@ -18,8 +18,8 @@ class Dir200Search extends Dir200
     public function rules()
     {
         return [
-            [['id', 'dept_id', 'prj_id'], 'integer'],
-            [['job_title', 'empe_name', 'ext_num', 'cell_num', 'mailbox'], 'safe'],
+         //   [['id', 'dept_id', 'prj_id'], 'integer'],
+            [['dept.dept_name','prj.prj_name','job_title', 'empe_name', 'ext_num', 'cell_num', 'mailbox'], 'safe'],
         ];
     }
 
