@@ -20,7 +20,8 @@ class DirDept extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'dir_dept';
+//        return 'dir_dept';
+            return '{{%dir_dept}}';
     }
 
     /**
