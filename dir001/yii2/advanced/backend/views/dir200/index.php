@@ -25,13 +25,13 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'dept_id',
-            'prj_id',
+            'dept.dept_name',
+            'prj.prj_name',
             'job_title',
             'empe_name',
-            // 'ext_num',
-            // 'cell_num',
-            // 'mailbox',
+             'ext_num',
+             'cell_num',
+             'mailbox',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
