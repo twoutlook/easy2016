@@ -18,7 +18,7 @@ use app\models\Author; //2016/4/13 8:49  Class 'Author' not found ???
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'author_id')->textInput() ?>
-        <?= $form->field($model, 'author_id')->dropDownList(\yii\helpers\ArrayHelper::map(Author::find()->select(['id','firstname','lastname'])->all(),'id','firstname'),['class'=>'form-controlinline-block']) ?>
+        <?= $form->field($model, 'author_id')->dropDownList(\yii\helpers\ArrayHelper::map(Author::find()->select(['id','firstname','lastname'])->all(),'id','firstname'),['class'=>'form-control inline-block']) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
