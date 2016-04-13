@@ -32,7 +32,7 @@ class Book extends \yii\db\ActiveRecord
             [['title', 'author_id'], 'required'],
             [['author_id'], 'integer'],
             [['title'], 'string', 'max' => 32],
-            [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => Author::className(), 'targetAttribute' => ['author_id' => 'id','message'=> Yii::t('app','作者ID不存在')]],
+            [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => Author::className(), 'targetAttribute' => ['author_id' => 'id']],
         ];
     }
 
