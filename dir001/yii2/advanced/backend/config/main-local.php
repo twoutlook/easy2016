@@ -21,7 +21,7 @@ if (!YII_ENV_TEST) {
         'class' => 'yii\gii\Module',
 //		'allowedIPs' => ['185.18.77.102'] // adjust this to your needs
       //'allowedIPs' => ['127.0.0.1', '::1', 'localhost']
-	'allowedIPs' => ['222.92.254.194','185.87.108.164'] // 2016/4/13 04:05    vpn in finland 185.87.108.164
+	'allowedIPs' => ['222.92.254.194','185.87.108.164','222.92.254.205'] // 2016/4/13 04:05    vpn in finland 185.87.108.164
 
     ];
 }
