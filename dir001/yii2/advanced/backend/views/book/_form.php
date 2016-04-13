@@ -3,6 +3,9 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
+use app\models\Author; //2016/4/13 8:49  Class 'Author' not found ???
+
+
 /* @var $this yii\web\View */
 /* @var $model app\models\Book */
 /* @var $form yii\widgets\ActiveForm */
