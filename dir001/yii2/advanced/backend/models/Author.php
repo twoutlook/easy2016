@@ -13,21 +13,19 @@ use Yii;
  *
  * @property Book[] $books
  */
-class Author extends \yii\db\ActiveRecord
-{
+class Author extends \yii\db\ActiveRecord {
+
     /**
      * @inheritdoc
      */
-    public static function tableName()
-    {
+    public static function tableName() {
         return 'author';
     }
 
     /**
      * @inheritdoc
      */
-    public function rules()
-    {
+    public function rules() {
         return [
             [['firstname', 'lastname'], 'required'],
             [['firstname', 'lastname'], 'string', 'max' => 32],
@@ -37,8 +35,7 @@ class Author extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    public function attributeLabels()
-    {
+    public function attributeLabels() {
         return [
             'id' => 'ID',
             'firstname' => 'Firstname',
@@ -49,24 +46,20 @@ class Author extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBooks()
-    {
+    public function getBooks() {
         return $this->hasMany(Book::className(), ['author_id' => 'id']);
     }
 
-        public function getDisplayName()
-    {
-        return $this->firstname.' '. $this->lastname;
+    public function getDisplayName() {
+        return $this->firstname .' '. $this->lastname;
     }
 
-    
-    
     /**
      * @inheritdoc
      * @return AuthorQuery the active query used by this AR class.
      */
-    public static function find()
-    {
+    public static function find() {
         return new AuthorQuery(get_called_class());
     }
+
 }

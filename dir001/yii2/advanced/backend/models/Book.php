@@ -44,7 +44,7 @@ class Book extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'title' => 'Title',
-            'author_id' => 'Author ID',
+            'author_id' => 'Author 作者',
         ];
     }
 
