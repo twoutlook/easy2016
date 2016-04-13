@@ -23,8 +23,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
 //            'id',
             'dept_id',
-            'dir_dept.deptName',
-            //  'author.displayName', //TRY 4
+            'dirDept.deptName',
+//            'dir_dept.deptName', //FAILED
+            
+            //  'author.displayName', //TRY 4 , OK!!!
             
             'prj_id',
             'job_title',
