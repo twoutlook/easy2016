@@ -23,7 +23,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'title',
-            'author_id'=>'displayName',// TRY THIS BY GUESSING
+            'author_id',
+            'displayName', //TRY AGAIN
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
