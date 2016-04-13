@@ -60,8 +60,8 @@ class Dir200Search extends Dir200
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-//            'dept_id' => $this->dept_id,
-//            'prj_id' => $this->prj_id,
+            'dept_id' => $this->dept_id,
+            'prj_id' => $this->prj_id,
         ]);
 
         $query->andFilterWhere(['like', 'job_title', $this->job_title])
