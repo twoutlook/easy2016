@@ -11,20 +11,21 @@ use app\models\Author; //2016/4/13 8:49  Class 'Author' not found
 
 <div class="book-form">
 
-<?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'author_id')->textInput() ?>
+
     <?php
-//    $form->field($model, 'author_id')->dropDownList(\yii\helpers\ArrayHelper::map(Author::find()->select(['id', 'firstname', 'lastname'])->all(), 'id', 'firstname'), ['class' => 'form-control inline-block'])
-echo     $form->field($model, 'author_id')->dropDownList(\yii\helpers\ArrayHelper::map(Author::find()->select(['id', 'firstname', 'lastname'])->all(), 'id', 'displayName'), ['class' => 'form-control inline-block']);
+//    echo $form->field($model, 'author_id')->textInput();
+//    echo $form->field($model, 'author_id')->dropDownList(\yii\helpers\ArrayHelper::map(Author::find()->select(['id', 'firstname', 'lastname'])->all(), 'id', 'firstname'), ['class' => 'form-control inline-block']);
+    echo $form->field($model, 'author_id')->dropDownList(\yii\helpers\ArrayHelper::map(Author::find()->select(['id', 'firstname', 'lastname'])->all(), 'id', 'displayName'), ['class' => 'form-control inline-block']);
     ?>
 
     <div class="form-group">
-    <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
-        <?php ActiveForm::end(); ?>
+    <?php ActiveForm::end(); ?>
 
 </div>
