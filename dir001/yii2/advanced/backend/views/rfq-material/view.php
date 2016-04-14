@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\RfqMaterial */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Rfq Materials', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => '材料規格', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="rfq-material-view">
