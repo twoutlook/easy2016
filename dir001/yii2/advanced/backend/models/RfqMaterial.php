@@ -46,7 +46,7 @@ class RfqMaterial extends \yii\db\ActiveRecord
             'material' => '材料規格',
             'price1' => '材料價格',
             'price2' => '廢料價格',
-            'seq' => 'Seq',
+            'seq' => '排序值',
         ];
     }
 
