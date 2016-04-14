@@ -7,7 +7,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\models\RfqMaterialSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Material';
+$this->title = '材料規格';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="rfq-material-index">
