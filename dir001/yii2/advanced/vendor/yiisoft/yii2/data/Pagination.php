@@ -129,7 +129,9 @@ class Pagination extends Object implements Linkable
      * @var integer the default page size. This property will be returned by [[pageSize]] when page size
      * cannot be determined by [[pageSizeParam]] from [[params]].
      */
-    public $defaultPageSize = 20;
+//    public $defaultPageSize = 20; 
+    public $defaultPageSize = 10; // by Mark, 2016-4-14, to show on one page
+    
     /**
      * @var array|boolean the page size limits. The first array element stands for the minimal page size, and the second
      * the maximal page size. If this is false, it means [[pageSize]] should always return the value of [[defaultPageSize]].
