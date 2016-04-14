@@ -8,7 +8,7 @@ use yii\helpers\Html;
 $this->title = '修改: ' . $model->id;
 $this->params['breadcrumbs'][] = ['label' => '材料規格', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = '修改';
 ?>
 <div class="rfq-material-update">
 
