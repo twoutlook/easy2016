@@ -21,21 +21,23 @@ use yii\widgets\Pjax;
 
         <p class="lead">您已登入富鈦金屬企業內部網站，請選擇系統點擊進入</p>
 
-        <p><a class="btn btn-lg btn-success" href="index.php?r=dir%2Findex">打開通信錄</a></p>
+      
 
         <?php
         $userId = Yii::$app->user->getId();
 //$userId=Yii::$app->user->getId();
 //echo "user id is $userId"
+      
+        if (($userId == 3 ||$userId == 4 )) { // 6: david
+              echo  '  <p><a class="btn btn-lg btn-success" href="index.php?r=dir%2Findex">富鈦通信錄</a></p>';
+        }
+        
+        
         if (($userId == 6)) { // 6: david
-        ?>
-            
-               <p><a class="btn btn-lg btn-success" href="index.php?r=crm001%2Findex">CRM001</a></p>
-        <?php }
-        if (($userId == 7)) { // 7: jason
-
-            
-              echo '<p><a class="btn btn-lg btn-success" href="index.php?r=rfq-material%2Findex">RFQ 下拉基礎資料維護</a></p>';
+              echo  '<p><a class="btn btn-lg btn-success" href="index.php?r=crm001%2Findex">CRM001</a></p>';
+        }
+        if (($userId == 7)) { // 7: jason            
+              echo '<p><a class="btn btn-lg btn-success" href="index.php?r=rfq-material%2Findex">RFQ 維護下拉基礎數據</a></p>';
         }
         
         
