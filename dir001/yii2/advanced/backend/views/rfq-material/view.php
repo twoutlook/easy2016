@@ -23,7 +23,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
-        <?= Html::a('查詢', ['index', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('回到查詢', ['index', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= DetailView::widget([
