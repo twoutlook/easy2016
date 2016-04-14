@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\RfqMaterial */
 
-$this->title = 'Create Rfq Material';
+$this->title = '新增一筆材料規格';
 $this->params['breadcrumbs'][] = ['label' => 'Rfq Materials', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
