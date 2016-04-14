@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model app\models\RfqMaterial */
 
 $this->title = '新增一筆材料規格';
-$this->params['breadcrumbs'][] = ['label' => 'Rfq Materials', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => '材料規格', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="rfq-material-create">
